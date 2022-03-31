@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      body {
+        padding: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-gap: 1rem;
+        /* start with 1 col */
+        grid-template-columns: 1fr;
+      }
+
+      /* 2 col at 600px and above */
+      @media (min-width: 600px) {
+        .wrapper {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      /* 3 col at 800px and above */
+      @media (min-width: 800px) {
+        .wrapper {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+      .box {
+        background-color: #444;
+        color: white;
+        padding: 2rem;
+        font-size: large;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+      <div class="box e">E</div>
+      <div class="box f">F</div>
+    </div>
+
+  </body>
+</html>
